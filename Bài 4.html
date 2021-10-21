@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    Sum();
+
+    function Sum(){
+    let Sum=0;
+    for (let i=0;i<=500;i++){
+        let dem=0;
+        for (let j=0;j<=i;j++){
+            if (i > 1) {
+                if (i % j === 0) {
+                    dem++;
+                }
+            }
+        }if (dem===2){
+            Sum=Sum+i;
+        }
+
+    }document.write('Tổng của các SNT nhỏ hơn 500 là:= '+Sum);
+    }
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //let array=["r",2,3,4,"a",6,"b",8,9,10,11,"a",13,14,"d",16,"o"]
+    let strings=prompt('Nhập Chuỗi Kí Tự')
+    document.write('Chuỗi ừa nhập :'+strings+'<br>');
+    let arr=strings.split('')
+    document.write('Mảng Xuất ra :'+arr+'<br>');
+
+    let finda=findKTa(arr);
+
+
+    function findKTa(array){
+    let count=0;
+    for (let i=0;i<array.length;i++){
+        if (array[i]==="a"){
+            count++;
+        }
+    }document.write('Mảng vửa nhập có '+count+' ký tự a');
+    }
+
+</script>
+</body>
+</html>
